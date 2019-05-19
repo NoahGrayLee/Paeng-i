@@ -1,0 +1,32 @@
+[
+  {
+    "model": "activities.activity",
+    "pk": 1,
+    "fields": {
+      "chapter": "",
+      "title": "",
+      "year": "",
+      "version": "",
+      "floor": "",
+      "bible_name": "",
+      "main_verses": "",
+      "main_verse_start": "",
+      "main_verse_end": "",
+      "ref_verse_start": "",
+      "ref_verse_end": "",
+      "tags": "",
+      "team": "",
+      "pastor": "",
+      "teacher": "",
+      "subject_summary": "",
+      "activity_summary": "",
+      "note_by_age": "",
+      "activity_materials": "",
+      "bible_study": "",
+      "activity_intro": "",
+      "activity_body": "",
+      "activity_outro": "",
+      "reflection": ""
+    }
+  }
+]

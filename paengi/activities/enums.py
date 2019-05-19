@@ -1,0 +1,194 @@
+from django.db import models 
+
+# ---------- FLOOR Enums
+
+STORYFLOOR = 'STORYFLOOR'
+MUSICFLOOR = 'MUSICFLOOR'
+THEATERFLOOR = 'THEATERFLOOR'
+COOKFLOOR = 'COOKFLOOR'
+ARTFLOOR = 'ARTFLOOR'
+PLAYFLOOR = 'PLAYFLOOR'
+
+FLOOR_CHOICES = [
+  (STORYFLOOR, '하늘마루'),
+  (MUSICFLOOR, '울림마루'),
+  (THEATERFLOOR, '연극마루'),
+  (COOKFLOOR, '만나마루'),
+  (ARTFLOOR, '그림마루'),
+  (PLAYFLOOR, '놀이마루')
+]
+
+# ---------- BIBLE Enums
+# 구약
+GENESIS =  'GENESIS'
+EXODUS =  'EXODUS'
+LEVITICUS =  'LEVITICUS'
+NUMBERS =  'NUMBERS'
+DEUTERONOMY = 'DEUTERONOMY'
+JOSHUA = 'JOSHUA'
+JUDGES = 'JUDGES'
+RUTH = 'RUTH'
+SAMUEL1 = 'SAMUEL1'
+SAMUEL2 = 'SAMUEL2'
+KINGS1 = 'KINGS1'
+KINGS2 = 'KINGS2'
+CHRONICLES1 = 'CHRONICLES1'
+CHRONICLES2 =  'CHRONICLES2'
+EZRA = 'EZRA'
+NEHEMIAH = 'NEHEMIAH'
+ESTHER = 'ESTHER'
+JOB = 'JOB'
+PSALM = 'PSALM'
+PROVERBS =  'PROVERBS'
+ECCLESIASTES =  'ECCLESIASTES'
+SONGOFSONGS = 'SONGOFSONGS'
+ISAIAH = 'ISAIAH'
+JEREMIAH = 'JEREMIAH'
+LAMENTATIONS =  'LAMENTATIONS'
+EZEKIEL = 'EZEKIEL'
+DANIEL = 'DANIEL'
+HOSEA = 'HOSEA'
+JOEL = 'JOEL'
+AMOS =  'AMOS'
+OBADIAH =  'OBADIAH'
+JONAH = 'JONAH'
+MICAH = 'MICAH'
+NAHUM = 'NAHUM'
+HABAKKUK = 'HABAKKUK'
+ZEPHANIAH = 'ZEPHANIAH'
+HAGGAI = 'HAGGAI'
+ZECHARIAH = 'ZECHARIAH'
+MALACHI = 'MALACHI'
+# 신약
+MATTHEW = 'MATTHEW'
+MARK =  'MARK'
+LUKE =  'LUKE'
+JOHN = 'JOHN'
+ACTS =  'ACTS'
+ROMANS = 'ROMANS'
+CORINTHIANS1 = 'CORINTHIANS1'
+CORINTHIANS2 = 'CORINTHIANS2'
+GALATIANS = 'GALATIANS'
+EPHESIANS = 'EPHESIANS'
+PHILIPPIANS = 'PHILIPPIANS'
+COLOSSIANS = 'COLOSSIANS'
+THESSALONIANS1 = 'THESSALONIANS1'
+THESSALONIANS2 = 'THESSALONIANS2'
+TIMOTHY1 = 'TIMOTHY1'
+TIMOTHY2 = 'TIMOTHY2'
+TITUS = 'TITUS'
+PHILEMON = 'PHILEMON'
+HEBREWS = 'HEBREWS'
+JAMES = 'JAMES'
+PETER1 = 'PETER1'
+PETER2 = 'PETER2'
+JOHN1 = 'JOHN1'
+JOHN2 = 'JOHN2'
+JOHN3 = 'JOHN3'
+JUDE = 'JUDE'
+REVELATION =  'REVELATION'
+
+BIBLE_CHOICES = [
+  # 구약
+  (GENESIS, '창세기'),
+  (EXODUS, '출애굽기'),
+  (LEVITICUS, '레위기'),
+  (NUMBERS, '민수기'),
+  (DEUTERONOMY, '신명기'),
+  (JOSHUA, '여호수아'),
+  (JUDGES, '사사기'),
+  (RUTH, '룻기'),
+  (SAMUEL1, '사무엘상'),
+  (SAMUEL2, '사무엘하'),
+  (KINGS1, '열왕기상'),
+  (KINGS2, '열왕기하'),
+  (CHRONICLES1, '역대상'),
+  (CHRONICLES2, '역대하'),
+  (EZRA, '에스라'),
+  (NEHEMIAH, '느헤미야'),
+  (ESTHER, '에스더'),
+  (JOB, '욥기'),
+  (PSALM, '시편'),
+  (PROVERBS, '잠언'),
+  (ECCLESIASTES, '전도서'),
+  (SONGOFSONGS, '아가'),
+  (ISAIAH, '이사야'),
+  (JEREMIAH, '예레미야'),
+  (LAMENTATIONS, '예레미야애가'),
+  (EZEKIEL, '에스겔'),
+  (DANIEL, '다니엘'),
+  (HOSEA, '호세아'),
+  (JOEL, '요엘'),
+  (AMOS, '아모스'),
+  (OBADIAH, '오바댜'),
+  (JONAH, '요나'),
+  (MICAH, '미가'),
+  (NAHUM, '나훔'),
+  (HABAKKUK, '하박국'),
+  (ZEPHANIAH, '스바냐'),
+  (HAGGAI, '학개'),
+  (ZECHARIAH, '스가랴'),
+  (MALACHI, '말라기'),
+  # 신약
+  (MATTHEW, '마태복음'),
+  (MARK, '마가복음'),
+  (LUKE, '누가복음'),
+  (JOHN, '요한복음'),
+  (ACTS, '사도행전'),
+  (ROMANS, '로마서'),
+  (CORINTHIANS1, '고린도전서'),
+  (CORINTHIANS2, '고린도후서'),
+  (GALATIANS, '갈라디아서'),
+  (EPHESIANS, '에베소서'),
+  (PHILIPPIANS, '빌립보서'),
+  (COLOSSIANS, '골로새서'),
+  (THESSALONIANS1, '데살로니가전서'),
+  (THESSALONIANS2, '데살로니가후서'),
+  (TIMOTHY1, '디모데전서'),
+  (TIMOTHY2, '디모데후서'),
+  (TITUS, '디도서'),
+  (PHILEMON, '빌레몬서'),
+  (HEBREWS, '히브리서'),
+  (JAMES, '야고보서'),
+  (PETER1, '베드로전서'),
+  (PETER2, '베드로후서'),
+  (JOHN1, '요한1서'),
+  (JOHN2, '요한2서'),
+  (JOHN3, '요한3서'),
+  (JUDE, '유다서'),
+  (REVELATION, '요한계시록')
+]
+
+# ---------- TEAM Enums
+# ? 교육팀을 연도별로 나눠둬야 할까? 
+EDUCATION1 = 'EDUCATION1'
+EDUCATION2 = 'EDUCATION2'
+COMMUNICATION = 'COMMUNICATION'
+
+TEAM_CHOICES = [
+  (EDUCATION1, '교육 1팀'),
+  (EDUCATION2, '교육 2팀'),
+  (COMMUNICATION, '목자팀')
+]
+
+# ---------- PASTOR Enums
+YJY = 'YJY'
+JEA = 'JEA'
+BIH = 'BIH'
+KSJ = 'KSJ'
+
+PASTOR_CHOICES = [
+  (YJY, '윤주열 목사님'),
+  (JEA, '조은애 전도사님'),
+  (BIH, '백인하 전도사님'),
+  (KSJ, '김성주 전도사님')
+]
+
+# ---------- VERSION Enums
+VERSION1 = 'VERSION1'
+VERSION2 = 'VERSION2'
+
+VERSION_CHOICES = [
+  (VERSION1, 'Version 1'),
+  (VERSION2, 'Version 2'),
+]
