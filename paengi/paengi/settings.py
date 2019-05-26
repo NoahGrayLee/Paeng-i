@@ -36,12 +36,12 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles',
-    'leads',
+    'django.contrib.staticfiles',    
     'rest_framework',
     'frontend',
+    'taggit',
     'activities',
-    'taggit'
+    'notifications',
 ]
 
 MIDDLEWARE = [
@@ -110,7 +110,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Seoul'
 
 USE_I18N = True
 
