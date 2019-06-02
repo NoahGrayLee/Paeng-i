@@ -1,0 +1,8 @@
+export { default as Home } from './Home'
+export { default as Notifications } from './Notifications'
+export { default as Schedules } from './Schedules'
+export { default as MeetingNotes } from './MeetingNotes'
+export { default as Documents } from './Documents'
+export { default as Attendance } from './Attendance'
+export { default as Accounting } from './Accounting'
+export { default as Coworkers } from './Coworkers'

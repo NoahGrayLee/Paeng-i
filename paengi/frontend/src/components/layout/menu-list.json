@@ -1,0 +1,106 @@
+[
+  {
+    "sectionTitle": "알림",
+    "path": "/notifications"
+  },
+  {
+    "sectionTitle": "일정",
+    "path": "/schedules",
+    "subMenus": [
+      {
+        "menuTitle": "전체일정",
+        "path": ""
+      },
+      {
+        "menuTitle": "교육일정",
+        "path": ""
+      },
+      {
+        "menuTitle": "행사일정",
+        "path": ""
+      }
+    ]
+  },
+  {
+    "sectionTitle": "회의록",
+    "path": "/meeting-notes",
+    "subMenus": [
+      {
+        "menuTitle": "전체보기",
+        "path": ""
+      },
+      {
+        "menuTitle": "마당회 회의록",
+        "path": ""
+      },
+      {
+        "menuTitle": "임원진 회의록",
+        "path": ""
+      },
+      {
+        "menuTitle": "목자팀 회의록",
+        "path": ""
+      },
+      {
+        "menuTitle": "교육 1팀 회의록",
+        "path": ""
+      },
+      {
+        "menuTitle": "교육 2팀 회의록",
+        "path": ""
+      }
+    ]
+  },
+  {
+    "sectionTitle": "팽이교재 Version 1",
+    "path": "/documents/version1",
+    "subMenus": [
+      {
+        "menuTitle": "2019",
+        "path": ""
+      },
+      {
+        "menuTitle": "2018",
+        "path": ""
+      },
+      {
+        "menuTitle": "2017",
+        "path": ""
+      },
+      {
+        "menuTitle": "2016",
+        "path": ""
+      },
+      {
+        "menuTitle": "2015",
+        "path": ""
+      },
+      {
+        "menuTitle": "2014",
+        "path": ""
+      }
+    ]
+  },
+  {
+    "sectionTitle": "팽이교재 Version 2",
+    "path": "/documents/version2",
+    "subMenus": [
+      {
+        "menuTitle": "2021 (준비중)",
+        "path": ""
+      }
+    ]
+  },
+  {
+    "sectionTitle": "츌석현황 대시보드",
+    "path": "/attendance"
+  },
+  {
+    "sectionTitle": "회계보고",
+    "path": "/accounting"
+  },
+  {
+    "sectionTitle": "함께한 사람들",
+    "path": "/coworkers"
+  }
+]

@@ -7,7 +7,7 @@ const DataProvider = () => {
   const [placeholder, setPlaceholder] = useState("Loading")
 
   useEffect(() => {
-    fetch("api/lead")
+    fetch("api/notification")
       .then(response => {
         if (response.status !== 200) {
           setPlaceholder("Something went wrong")
